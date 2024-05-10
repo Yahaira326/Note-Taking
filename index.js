@@ -19,6 +19,7 @@ function createNoteEl(id, content) {
     }
   });
 
+  
   element.addEventListener("input", () => {
     updateNote(id, element.value);
   });
@@ -38,6 +39,7 @@ function updateNote(id, content) {
   target.content = content;
   saveNote(notes);
 }
+
 
 function addNote() {
   const notes = getNotes();
